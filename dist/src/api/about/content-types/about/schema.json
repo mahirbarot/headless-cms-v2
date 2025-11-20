@@ -1,0 +1,48 @@
+{
+    "kind": "singleType",
+    "collectionName": "abouts",
+    "info": {
+        "singularName": "about",
+        "pluralName": "abouts",
+        "displayName": "About Section",
+        "description": "About us section with description, vision, and approach"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "about_title": {
+            "type": "string",
+            "required": true,
+            "default": "About Us"
+        },
+        "about_sub_title": {
+            "type": "string",
+            "default": "Bedroom Design"
+        },
+        "about_description": {
+            "type": "richtext",
+            "required": true
+        },
+        "about_vision_title": {
+            "type": "string",
+            "default": "Our Vision"
+        },
+        "about_vision_description": {
+            "type": "richtext"
+        },
+        "about_approach_title": {
+            "type": "string",
+            "default": "Our Approach"
+        },
+        "about_approach_description": {
+            "type": "richtext"
+        },
+        "about_image": {
+            "type": "media",
+            "multiple": false,
+            "allowedTypes": ["images"]
+        }
+    }
+}

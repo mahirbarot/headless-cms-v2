@@ -1,0 +1,54 @@
+{
+    "kind": "collectionType",
+    "collectionName": "project_items",
+    "info": {
+        "singularName": "project-item",
+        "pluralName": "project-items",
+        "displayName": "Project Item",
+        "description": "Individual project item"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "project_title": {
+            "type": "string",
+            "required": true
+        },
+        "project_cover_image": {
+            "type": "media",
+            "multiple": false,
+            "required": true,
+            "allowedTypes": ["images"]
+        },
+        "project_thumbnail_image": {
+            "type": "media",
+            "multiple": false,
+            "allowedTypes": ["images"]
+        },
+        "project_description": {
+            "type": "text",
+            "required": true
+        },
+        "project_year": {
+            "type": "integer",
+            "required": true
+        },
+        "project_category": {
+            "type": "string",
+            "required": true
+        },
+        "project_link": {
+            "type": "string",
+            "default": "View Project"
+        },
+        "project_type": {
+            "type": "string"
+        },
+        "project_tags": {
+            "type": "json",
+            "required": false
+        }
+    }
+}

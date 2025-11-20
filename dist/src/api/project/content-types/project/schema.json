@@ -1,0 +1,33 @@
+{
+    "kind": "singleType",
+    "collectionName": "projects",
+    "info": {
+        "singularName": "project",
+        "pluralName": "projects",
+        "displayName": "Projects Section",
+        "description": "Projects section with list of projects"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "projects_title": {
+            "type": "string",
+            "required": true,
+            "default": "Our Projects"
+        },
+        "projects_subtitle": {
+            "type": "string",
+            "default": "Innovative architectural solutions for modern living"
+        },
+        "project_list": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::project-item.project-item"
+        },
+        "view_all_projects_link": {
+            "type": "string"
+        }
+    }
+}

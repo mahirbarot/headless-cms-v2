@@ -1,0 +1,42 @@
+{
+    "kind": "singleType",
+    "collectionName": "contacts",
+    "info": {
+        "singularName": "contact",
+        "pluralName": "contacts",
+        "displayName": "Contact Section",
+        "description": "Contact section with form fields and email"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "contact_title": {
+            "type": "string",
+            "required": true,
+            "default": "Get in Touch"
+        },
+        "contact_form_name_placeholder": {
+            "type": "string",
+            "default": "Your Name"
+        },
+        "contact_form_email_placeholder": {
+            "type": "string",
+            "default": "Your Email"
+        },
+        "contact_form_message_placeholder": {
+            "type": "string",
+            "default": "Your Message"
+        },
+        "contact_submit_button_text": {
+            "type": "string",
+            "default": "Send Message"
+        },
+        "contact_email": {
+            "type": "email",
+            "required": true,
+            "default": "hsplanningltd@yahoo.com"
+        }
+    }
+}

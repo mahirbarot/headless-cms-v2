@@ -1,0 +1,33 @@
+{
+    "kind": "singleType",
+    "collectionName": "careers",
+    "info": {
+        "singularName": "career",
+        "pluralName": "careers",
+        "displayName": "Careers Section",
+        "description": "Careers section with job openings"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "careers_title": {
+            "type": "string",
+            "required": true,
+            "default": "Join Our Team"
+        },
+        "careers_description": {
+            "type": "richtext"
+        },
+        "current_openings_title": {
+            "type": "string",
+            "default": "Current Openings"
+        },
+        "openings_list": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::job-opening.job-opening"
+        }
+    }
+}

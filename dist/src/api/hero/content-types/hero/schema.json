@@ -1,0 +1,35 @@
+{
+    "kind": "singleType",
+    "collectionName": "heroes",
+    "info": {
+        "singularName": "hero",
+        "pluralName": "heroes",
+        "displayName": "Hero Section",
+        "description": "Hero section with title, subtitle, and background image"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "hero_title": {
+            "type": "string",
+            "required": true,
+            "default": "Shaping the Future"
+        },
+        "hero_subtitle": {
+            "type": "string",
+            "required": true,
+            "default": "Client Satisfaction Is Our Profit"
+        },
+        "hero_background_image": {
+            "type": "media",
+            "multiple": false,
+            "required": true,
+            "allowedTypes": ["images"]
+        },
+        "hero_tagline": {
+            "type": "text"
+        }
+    }
+}

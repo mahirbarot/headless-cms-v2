@@ -1,0 +1,51 @@
+{
+    "kind": "singleType",
+    "collectionName": "navigations",
+    "info": {
+        "singularName": "navigation",
+        "pluralName": "navigations",
+        "displayName": "Navigation",
+        "description": "Navigation menu items"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "menu_home": {
+            "type": "string",
+            "required": true,
+            "default": "Home"
+        },
+        "menu_about": {
+            "type": "string",
+            "required": true,
+            "default": "About"
+        },
+        "menu_services": {
+            "type": "string",
+            "required": true,
+            "default": "Services"
+        },
+        "menu_projects": {
+            "type": "string",
+            "required": true,
+            "default": "Projects"
+        },
+        "menu_gallery": {
+            "type": "string",
+            "required": true,
+            "default": "Gallery"
+        },
+        "menu_careers": {
+            "type": "string",
+            "required": true,
+            "default": "Careers"
+        },
+        "menu_contact": {
+            "type": "string",
+            "required": true,
+            "default": "Contact"
+        }
+    }
+}

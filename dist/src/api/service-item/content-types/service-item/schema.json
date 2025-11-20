@@ -1,0 +1,29 @@
+{
+    "kind": "collectionType",
+    "collectionName": "service_items",
+    "info": {
+        "singularName": "service-item",
+        "pluralName": "service-items",
+        "displayName": "Service Item",
+        "description": "Individual service item"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "service_name": {
+            "type": "string",
+            "required": true
+        },
+        "service_description": {
+            "type": "richtext",
+            "required": true
+        },
+        "service_icon": {
+            "type": "media",
+            "multiple": false,
+            "allowedTypes": ["images"]
+        }
+    }
+}

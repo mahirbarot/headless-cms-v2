@@ -1,0 +1,26 @@
+{
+    "kind": "singleType",
+    "collectionName": "services",
+    "info": {
+        "singularName": "service",
+        "pluralName": "services",
+        "displayName": "Services Section",
+        "description": "Services section with list of services"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "services_title": {
+            "type": "string",
+            "required": true,
+            "default": "Our Services"
+        },
+        "service_list": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::service-item.service-item"
+        }
+    }
+}

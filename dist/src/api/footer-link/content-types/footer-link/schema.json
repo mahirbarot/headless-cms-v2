@@ -1,0 +1,24 @@
+{
+    "kind": "collectionType",
+    "collectionName": "footer_links",
+    "info": {
+        "singularName": "footer-link",
+        "pluralName": "footer-links",
+        "displayName": "Footer Link",
+        "description": "Individual footer link"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "link_text": {
+            "type": "string",
+            "required": true
+        },
+        "link_url": {
+            "type": "string",
+            "required": true
+        }
+    }
+}

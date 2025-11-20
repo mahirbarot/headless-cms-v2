@@ -1,0 +1,31 @@
+{
+    "kind": "singleType",
+    "collectionName": "footers",
+    "info": {
+        "singularName": "footer",
+        "pluralName": "footers",
+        "displayName": "Footer Section",
+        "description": "Footer section with text, logo, and links"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "footer_text": {
+            "type": "string",
+            "required": true,
+            "default": "© 2025 H S Planning Ltd. All rights reserved."
+        },
+        "footer_logo": {
+            "type": "media",
+            "multiple": false,
+            "allowedTypes": ["images"]
+        },
+        "footer_links": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::footer-link.footer-link"
+        }
+    }
+}
