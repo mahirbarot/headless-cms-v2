@@ -1,0 +1,35 @@
+{
+  "name": "cms-architect",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Architecture Firm CMS built with Strapi",
+  "scripts": {
+    "build": "strapi build",
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "strapi": "strapi"
+  },
+  "dependencies": {
+    "@strapi/strapi": "^5.31.1",
+    "@strapi/plugin-users-permissions": "^5.31.1",
+    "@strapi/plugin-i18n": "^5.31.1",
+    "better-sqlite3": "^11.7.0",
+    "pg": "^8.13.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.10",
+    "typescript": "^5.7.2"
+  },
+  "author": {
+    "name": "Your Name"
+  },
+  "strapi": {
+    "uuid": ""
+  },
+  "engines": {
+    "node": ">=20.0.0 <=22.x.x",
+    "npm": ">=8.0.0"
+  },
+  "license": "MIT"
+}
+
